@@ -42,3 +42,7 @@ $ python bikeshare_2.py
 ### Contributing
 
 This repository is part of my training and all contributions are welcome. For details, check out [CONTRIBUTING](CONTRIBUTING.md).
+
+### License
+
+Bikeshare is distributed under the [MIT license](LICENSE.md).
