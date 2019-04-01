@@ -71,9 +71,9 @@ def load_data(city, month, day):
 
     # extract month and day of week from Start Time to create new columns
     # The month as January=1, December=12.
-    df['month'] = df['Start Time'].dt.month
+    df['Month'] = df['Start Time'].dt.month
     # The day of the week with Monday=0, Sunday=6.
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['Day_Of_Week'] = df['Start Time'].dt.weekday_name
 
 
     # filter by month if applicable
@@ -83,12 +83,12 @@ def load_data(city, month, day):
         month = months.index(month) + 1
 
         # filter by month to create the new dataframe
-        df = df[df.month == month]
+        df = df[df.Month == month]
 
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
-        df = df[df.day_of_week == day.title()]
+        df = df[df.Day_Of_Week == day.title()]
 
     return df
 
@@ -103,7 +103,7 @@ def time_stats(df):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # display the most common month
-    popular_month_int = df['month'].mode().values
+    popular_month_int = df['Month'].mode().values
     # use the index of the months list to get the corresponding month
     months = ['January', 'February', 'March', 'April', 'May', 'June']
     popular_month_str = []
@@ -114,14 +114,14 @@ def time_stats(df):
     print('Most Popular Month:', popular_month_str)
 
     # display the most common day of week
-    popular_day = df['day_of_week'].mode().values
+    popular_day = df['Day_Of_Week'].mode().values
     print('Most Popular Day of Week:', popular_day)
 
     # display the most common start hour
     # extract hour from the Start Time column to create an hour column
-    df['hour'] = df['Start Time'].dt.hour
+    df['Hour'] = df['Start Time'].dt.hour
     # find the most popular hour
-    popular_hour = df['hour'].mode().values
+    popular_hour = df['Hour'].mode().values
     print('Most Popular Start Hour:', popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
