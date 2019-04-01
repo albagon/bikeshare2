@@ -38,3 +38,7 @@ $ python bikeshare_2.py
 - [How To Filter Pandas Dataframe By Values of Column?](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/)
 - [pandas 0.24.2 documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.month.html#pandas.Series.dt.month)
 - [ASCII Bicycle Art](https://www.pinterest.co.uk/pin/Ae88OeKQTXkLdcJ9NmoeR0IJOETTXuqEWXXbe6JWMvqlZu6nVBAOXsE/)
+
+### Contributing
+
+This repository is part of my training and all contributions are welcome. For details, check out [CONTRIBUTING](CONTRIBUTING.md).
