@@ -108,9 +108,8 @@ def time_stats(df):
     months = ['January', 'February', 'March', 'April', 'May', 'June']
     popular_month_str = []
 
-    for i in range(len(popular_month_int)):
-        value = popular_month_int[i]
-        popular_month_str.append(months[value - 1])
+    for i in popular_month_int:
+        popular_month_str.append(months[i - 1])
 
     print('Most Popular Month:', popular_month_str)
 
