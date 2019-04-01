@@ -16,6 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
+    # The next 3 lines print an ASCII Bicycle Art to welcome the user.
     print('   __o')
     print(' _`\\<,_')
     print('(*)/ (*)   Hello! Let\'s explore some US bikeshare data!')
