@@ -29,7 +29,12 @@ $ python bikeshare_2.py
 ```
 
 ### Files included in this project
+
 - bikeshare_2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+- [Stackoverflow](https://stackoverflow.com)
+- [How To Filter Pandas Dataframe By Values of Column?](https://cmdlinetips.com/2018/02/how-to-subset-pandas-dataframe-based-on-values-of-a-column/)
+- [pandas 0.24.2 documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.dt.month.html#pandas.Series.dt.month)
+- [ASCII Bicycle Art](https://www.pinterest.co.uk/pin/Ae88OeKQTXkLdcJ9NmoeR0IJOETTXuqEWXXbe6JWMvqlZu6nVBAOXsE/)
